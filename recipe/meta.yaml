@@ -9,7 +9,7 @@ source:
   sha256: "485342c6920e9fdc2addfe75e5c3e0381793f18b339ab7393c1b6edf78bf8ca8"
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
   script:
     - ./bootstrap.sh
@@ -17,6 +17,8 @@ build:
     - make
     - make check
     - make install
+  run_exports:
+    - {{ pin_subpackage('libfyaml', max_pin='x.x') }}
 
 requirements:
   build:
