@@ -1,4 +1,4 @@
-{% set version = "0.7.12" %}
+{% set version = "0.8" %}
 
 package:
   name: libfyaml
@@ -6,10 +6,10 @@ package:
 
 source:
   url: https://github.com/pantoniou/libfyaml/releases/download/v{{ version }}/libfyaml-{{ version }}.tar.gz
-  sha256: "485342c6920e9fdc2addfe75e5c3e0381793f18b339ab7393c1b6edf78bf8ca8"
+  sha256: dc4d4348eedca68e8e2394556d57f71410e7d61791a71cbe178302ebe5f26b99
 
 build:
-  number: 1
+  number: 0
   skip: true  # [win]
   script:
     - ./bootstrap.sh
@@ -36,7 +36,7 @@ test:
 
 about:
   home: https://github.com/pantoniou/libfyaml
-  summary: 'Fully feature complete YAML parser and emitter'
+  summary: Fully feature complete YAML parser and emitter
   description: |
     A fancy 1.2 YAML and JSON parser/writer.
 
