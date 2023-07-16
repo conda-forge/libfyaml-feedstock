@@ -9,13 +9,13 @@ source:
   sha256: dc4d4348eedca68e8e2394556d57f71410e7d61791a71cbe178302ebe5f26b99
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
   script:
     - ./bootstrap.sh
     - ./configure --prefix="${PREFIX}"
     - make
-    - make check
+    - "[[ $CONDA_BUILD_CROSS_COMPILATION != '1' ]] && make check"
     - make install
   run_exports:
     - {{ pin_subpackage('libfyaml', max_pin='x.x') }}

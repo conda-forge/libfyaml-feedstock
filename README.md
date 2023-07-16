@@ -1,11 +1,11 @@
-About libfyaml
-==============
+About libfyaml-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/libfyaml-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/pantoniou/libfyaml
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/libfyaml-feedstock/blob/main/LICENSE.txt)
 
 Summary: Fully feature complete YAML parser and emitter
 
@@ -54,6 +54,13 @@ Current build status
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=15971&branchName=main">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/libfyaml-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_arm64</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=15971&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/libfyaml-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_" alt="variant">
                 </a>
               </td>
             </tr>
