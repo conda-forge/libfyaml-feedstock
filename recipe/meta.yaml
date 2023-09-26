@@ -7,6 +7,8 @@ package:
 source:
   url: https://github.com/pantoniou/libfyaml/releases/download/v{{ version }}/libfyaml-{{ version }}.tar.gz
   sha256: 7731edc5dfcc345d5c5c9f6ce597133991a689dabede393cd77bae89b327cd6d
+  patches:
+    - macos-time.patch  # https://github.com/pantoniou/libfyaml/issues/100
 
 build:
   number: 0
