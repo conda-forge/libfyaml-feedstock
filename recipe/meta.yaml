@@ -1,4 +1,4 @@
-{% set version = "0.8" %}
+{% set version = "0.9" %}
 
 package:
   name: libfyaml
@@ -6,10 +6,12 @@ package:
 
 source:
   url: https://github.com/pantoniou/libfyaml/releases/download/v{{ version }}/libfyaml-{{ version }}.tar.gz
-  sha256: dc4d4348eedca68e8e2394556d57f71410e7d61791a71cbe178302ebe5f26b99
+  sha256: 7731edc5dfcc345d5c5c9f6ce597133991a689dabede393cd77bae89b327cd6d
+  patches:
+    - macos-time.patch  # https://github.com/pantoniou/libfyaml/issues/100
 
 build:
-  number: 1
+  number: 0
   skip: true  # [win]
   script:
     - ./bootstrap.sh
