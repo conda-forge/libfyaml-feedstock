@@ -1,4 +1,4 @@
---- libfyaml-0.9.original/src/internal/fy-thread.c	2023-09-26 07:27:12.861509893 +0200
+--- libfyaml-0.9.ori/src/internal/fy-thread.c	2023-09-26 07:27:12.861509893 +0200
 +++ libfyaml-0.9.new/src/internal/fy-thread.c	2023-09-26 09:05:54.293896036 +0200
 @@ -183,108 +183,6 @@
  	return (long long)((int64_t)(after.tv_sec - before.tv_sec) * (int64_t)1000000000UL + (int64_t)(after.tv_nsec - before.tv_nsec));
