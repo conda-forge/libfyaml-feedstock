@@ -9,9 +9,10 @@ source:
   sha256: 7731edc5dfcc345d5c5c9f6ce597133991a689dabede393cd77bae89b327cd6d
   patches:
     - macos-time.patch  # https://github.com/pantoniou/libfyaml/issues/100
+    - UGM3.patch  # https://github.com/pantoniou/libfyaml/issues/99
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
   script:
     - ./bootstrap.sh
