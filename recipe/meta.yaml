@@ -1,4 +1,4 @@
-{% set version = "0.9.3" %}
+{% set version = "0.9.4" %}
 
 package:
   name: libfyaml
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/pantoniou/libfyaml/releases/download/v{{ version }}/libfyaml-{{ version }}.tar.gz
-  sha256: d4541c36ae726f51e9df22dd8ac1a19d122666060daf3806e37b848d4c73a8ed
+  sha256: dac2b0af7b757b32a4fa7c6493d85d0f7dea6effd20ae4352570b6a450b9e5fb
 
 build:
   number: 0
